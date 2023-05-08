@@ -138,7 +138,7 @@ begin
   end;
 
   Self.Area := Area;
-  Self.Bitmap := TMufasaBitmap.CreateFromClient(Self.Area);
+  Self.Bitmap := TMufasaBitmap.CreateFromTarget(Self.Area);
 
   // Assume smallest font is is 8px
   // Tesseract wants something like ~25px. 8*3.5 = 28
